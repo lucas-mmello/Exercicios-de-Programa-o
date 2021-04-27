@@ -40,7 +40,7 @@ function media(){
   
      }
      
-     else if(Media<6 && Media2<6 && Media3<6){
+     else{
        outSituação.textContent = 'Você está reprovado';
        outMedia.textContent = '';
      }
