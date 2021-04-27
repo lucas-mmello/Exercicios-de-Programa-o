@@ -40,9 +40,21 @@ function media(){
   
      }
      
-     else{
-       outSituação.textContent = 'Você está reprovado';
-       outMedia.textContent = '';
+     else if(Media<6 && Media>=Media2 && Media>=Media3){
+        
+      outMedia.textContent ='Sua média é ' + Media;
+      outSituação.textContent = 'Infelizmente ' + Aluno + ', você está reprovado';
+       
+    }
+    else if(Media2<6 && Media2>=Media3 && Media2>Media){
+      outMedia.textContent ='Sua média é ' + Media2;
+      outSituação.textContent = 'Infelizmente ' + Aluno + ', você está reprovado';
+  
+     }
+     else if(Media3<6 && Media3>Media && Media3>Media2){
+      outMedia.textContent ='Sua média é ' + Media3;
+      outSituação.textContent = 'Infelizmente ' + Aluno + ', você está reprovado';
+  
      }
      
     
